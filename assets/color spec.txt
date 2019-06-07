@@ -1,0 +1,40 @@
+Background: #484848
+Navigate Bar(Header): #212121
+LightBlue: #33d9e1
+White: #ffffff
+Any button in Connection: #7b7b7b
+Menu grey: #666666 
+
+Mastermode
+      <Badge
+        style={{ backgroundColor: "black" }}
+        textStyle={{ color: "white" }}
+      >
+        <Text>{Number((this.state.volumn).toFixed(1))}</Text>
+      </Badge>
+
+     <Badge
+            style={{ backgroundColor: "black" }}
+            textStyle={{ color: "white" }}
+          >
+            <Text>{Number((this.state.volumn).toFixed(1))}</Text>
+          </Badge>
+
+
+     onPress={(Track1on) =>{ this.state.Track1on ?
+     (this.setState({Track1on:true}))
+   }};
+
+        <Content padder>
+        <Button
+          transparent
+          onPress={ () =>{ this.setState({iconName: require("../../../assets/camera.png") });
+          this.props.navigation.navigate("Recordermode")}}
+        >
+              <Thumbnail square small source={this.state.iconName} style={{marginBottom: 10}} />
+        </Button>
+
+
+showBallIndicator
+
+Thumbnail square source={this.state.record} style={{marginBottom: 10,width:50}}
